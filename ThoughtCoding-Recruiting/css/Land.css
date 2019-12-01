@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head,
+.head img {
+    width: 120px;
+    height: 120px;
+    margin: 50px auto;
+    border-radius: 50%;
+}
+
+.manner {
+    width: 360px;
+    margin: 60px auto;
+    text-align: center;
+    text-indent: 3px;
+    color: inherit;
+}
+
+.submit input {
+    width: 200px;
+    height: 40px;
+}
+
+.submit a {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    border: 0;
+    border-radius: 3%;
+    margin-top: 10px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.submit {
+    transform: translate(-50%);
+    margin-left: 50%;
+    margin-top: 30px;
+    width: 200px;
+}

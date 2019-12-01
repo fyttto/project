@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/register.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../css/util.css">
+    <!-- <link rel="stylesheet" href="../css/main.css"> -->
+
+</head>
+
+<body>
+<div class="limiter">
+    <!-- 网页背景图片 -->
+    <div class="container-login100" style="background-image: url('../images/slide02.jpg');">
+        <!-- logo图片 -->
+        <div class="head">
+            <img src='../images/logo.png'>
+        </div>
+        <!-- 基础文字 -->
+        <div class="manner">
+            <span class="login100-form-title p-t-20 p-b-45">西邮thoughtcoding实验室</span>
+        </div>
+        <!-- 注册阶段 -->
+        <div class="submitmessage">
+            <div class="all">
+                <div class='message'>
+                    <div class="m1">
+                        <input type="text" class="stuName input_register" placeholder="姓名">
+                        <span class="icon-name"></span>
+                    </div>
+                    <form>
+                        <select class='major'>
+                            <option  selected="selected"  value='计算机类专业'>计算机类专业</option>
+                            <option value="自动化类专业">自动化类专业</option>
+                            <option value="通信类专业">通信类专业</option>
+                            <option value="电子类专业">电子类专业</option>
+                            <option value="其他">其他</option>
+                        </select>
+                    </form>
+                    <form>
+                        <select class='direction'>
+                            <option  selected="selected"  value='前端'>前端</option>
+                            <option value="产品">产品</option>
+                            <option value="后台">后台</option>
+                            <option value="安卓">安卓</option>
+                            <option value="嵌入式">嵌入式</option>
+                            <option value="无意向">无意向</option>
+                        </select>
+                    </form>
+                </div>
+                <!-- 验证码发送 -->
+                <div class="telephone">
+                    <div class="m2">
+                        <input type="text" placeholder="请输入手机号" class="tel tel_inp">
+                        <span class="icon-tele"></span>
+                    </div>
+                    <div class="m3">
+                        <input type="text" placeholder="请输入手机验证码" class="verify veri_inp">
+                        <span class="icon-vari"></span>
+                    </div>
+                    <div class="vari-2">
+                        <button class="test btn-test">获取验证码</button></div>
+                </div>
+                <!-- 提交阶段 -->
+                <div class="btn-sub">
+                    <button class='submit login'>点击报名</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/register.js"></script>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+
+</html>

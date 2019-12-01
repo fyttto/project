@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>查询</title>
+    <link rel="stylesheet" href="../css/query.css" type="text/css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="count"></div>
+        <form>方向 : &nbsp;&nbsp;
+            <select class='direction'>
+                                <option  selected="selected"  value='前端'>前端</option>
+                                <option value="产品">产品</option>
+                                <option value="后台">后台</option>
+                                <option value="安卓">安卓</option>
+                                <option value="嵌入式">嵌入式</option>
+                                <option value="无意向">无意向</option>
+            
+                           </select>
+
+        </form>
+        <form>状态 :
+            <select class='state'>
+                <option selected="selected" value="已报名">已报名</option>
+                <option value='一面通过'>一面通过</option>
+                <option value="二面通过">二面通过</option>
+                <option value="三面通过">三面通过</option>
+            </select>
+        </form>
+        <button class="submit">查询</button>
+        <button class="shuaxin">刷新</button>
+        <div class='mess'>
+            <table border="1" width=450px id='test' cellspacing="0" cellpadding="0">
+                <tbody class="tbody">
+                    <tr>
+                        <th>方向</th>
+                        <th>专业</th>
+                        <th>学号</th>
+                        <th>姓名</th>
+                        <th>电话</th>
+                        <th>状态</th>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../js/query.js"></script>
+</body>
+</html>

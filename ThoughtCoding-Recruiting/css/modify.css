@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 210px;
+    height: 200px;
+    margin: 200px auto;
+}
+
+.main input {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.main form {
+    display: inline;
+}
+
+.main button {
+    margin-right: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}

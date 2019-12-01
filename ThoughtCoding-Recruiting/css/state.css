@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.sayname {
+    /* border: 3px solid white; */
+    height: 18rem;
+    width: 18rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+    border: 1px solid white;
+    text-align: center;
+}
+
+.say,
+.name {
+    color: white;
+    display: inline;
+    font-size: 1.25rem;
+    font-family: sans-serif;
+}
+
+.sayname>img {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 2rem auto;
+}
+
+.container {
+    width: 100%;
+    height: 3rem;
+    margin-top: 20%;
+}
+
+.time-horizontal {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto !important;
+}
+
+.time-horizontal {
+    list-style-type: none;
+    border-top: 5px solid #494949;
+    max-width: 800px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.s {
+    color: #09c306 !important;
+}
+
+.s b:before {
+    content: '';
+    border: 2px solid #09c306 !important;
+    background: #09c306 !important;
+}
+
+.time-horizontal li {
+    color: #fff;
+    float: left;
+    position: relative;
+    text-align: center;
+    width: 25%;
+    padding-top: 10px;
+}
+
+.time-horizontal li b:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 47%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    background: #fff;
+}
+
+@media (min-width: 320px) {
+    .container {
+        margin-top: 80%;
+    }
+    .back {
+        background-image: url(../images/slide03.jpg);
+    }
+    .say,
+    .name {
+        font-size: .50rem;
+    }
+    .sayname {
+        height: 9rem;
+        width: 9rem;
+    }
+    .sayname>img {
+        width: 6rem;
+        height: 6rem;
+        margin: .5rem auto;
+    }
+    b {
+        font-size: 0.5rem;
+    }
+}
+
+@media (min-width: 360px) {
+    .container {
+        margin-top: 80%;
+    }
+}
+
+@media (min-width: 375px) {
+    .container {
+        margin-top: 95%;
+    }
+}
+
+@media (min-width: 386px) {
+    .container {
+        margin-top: 80%;
+    }
+}
+
+@media (min-width: 660px) {
+    .container {
+        margin-top: 60%;
+    }
+}
+
+@media (min-width:1000px) {
+    .container {
+        margin-top: 50%;
+    }
+    .back {
+        background-image: url(../images/slide01.jpg);
+    }
+    .say,
+    .name {
+        font-size: 1rem;
+    }
+    .sayname {
+        height: 12rem;
+        width: 12rem;
+    }
+    .sayname>img {
+        width: 7rem;
+        height: 7rem;
+        margin: 1rem auto;
+    }
+    b {
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        margin-top: 50%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .container {
+        margin-top: 36%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        margin-top: 30%;
+    }
+}
+
+@media (min-width: 1366px) {
+    .container {
+        margin-top: 30%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        margin-top: 30%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        margin-top: 25%;
+    }
+}

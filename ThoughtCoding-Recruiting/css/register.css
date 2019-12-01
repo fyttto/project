@@ -1,0 +1,563 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    width: 100%;
+    height: 120px;
+}
+
+.head img {
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%);
+    margin-left: 50%;
+    border-radius: 50%;
+}
+
+.manner {
+    width: 100%;
+    text-align: center;
+    text-indent: 10px;
+    line-height: 1.2;
+    display: block;
+    font-family: Montserrat-ExtraBold;
+    font-size: 24px;
+    color: #fff;
+}
+
+.submitmessage {
+    width: 100%;
+    display: flex;
+}
+
+.all {
+    margin: 0 auto;
+}
+
+.message {
+    line-height: 1.2;
+    display: block;
+    font-size: 18px;
+    color: #000;
+    font-family: Montserrat-Bold;
+}
+
+.m1 {
+    position: relative;
+}
+
+.m2 {
+    position: relative;
+}
+
+.m3 {
+    position: relative;
+}
+
+.icon-name {
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/name.png');
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    background-size: 100%;
+}
+
+.icon-tele {
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/cell-phone.png');
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    background-size: 100%;
+}
+
+.icon-vari {
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/verified-account.png');
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    background-size: 100%;
+}
+
+
+/* 电话 */
+
+.tel_inp {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 2em;
+    font-size: 18px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+.veri_inp {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 2em;
+    font-family: Montserrat-Bold;
+    font-size: 18px;
+}
+
+.vari-2 {
+    text-align: center;
+}
+
+.telephone button {
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #E4E4E1;
+    background-image: radial-gradient(at top center, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.03) 100%), linear-gradient(to top, rgba(255, 255, 255, 0.1) 0%, rgba(143, 152, 157, 0.60) 100%);
+    background-blend-mode: normal, multiply;
+    color: #fff;
+    border-radius: 1em;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+input {
+    text-indent: 60px;
+}
+
+
+/* .telephone button:hover {
+    width: 100px;
+    background: #C9CCD3;
+    border: 3px dotted #C9CCD3;
+    color: #fff;
+} */
+
+
+/* input::-ms-input-placeholder {
+    text-align: center;
+}
+
+input::-webkit-input-placeholder {
+    text-align: center;
+} */
+
+
+/* 输入框 */
+
+.message input {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 2em;
+    font-size: 18px;
+}
+
+.major,
+.direction {
+    margin-bottom: 10px;
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 2em;
+}
+
+select {
+    outline: none;
+    border: solid 1px #ccc;
+    /* color: cadetblue; */
+    /* appearance: none;
+    /*清除select下拉框默认样式*/
+    /* -moz-appearance: none;
+    -webkit-appearance: none; */
+    padding-left: 56px;
+    text-align: center;
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    /* background: url("img/arrow.png") no-repeat scroll right center transparent; */
+    /*自定义图片覆盖原有的下三角符号*/
+}
+
+select::-ms-expand {
+    display: none;
+    /*清除IE默认下拉按钮，但是测试发现IE10以上有效，IE8，9默认下拉按钮仍旧存在*/
+}
+
+.btn-sub {
+    text-align: center;
+}
+
+
+/* 提交按钮 */
+
+.login {
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    /* padding: 20px 20px; */
+    border: none;
+    transition: all 0.3s;
+    background: #C9CCD3;
+    border-radius: 2em;
+    border: 3px solid #C9CCD3;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.login:hover {
+    color: #fff;
+    background: none;
+    border: 3px dotted #C9CCD3;
+}
+
+
+/* 网页背景色 */
+
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-login100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container-login100::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+}
+
+@media (max-width:576px) {
+    .submitmessage {
+        width: 100%;
+        display: flex;
+    }
+    .all {
+        margin: 0 auto;
+    }
+    .tel_inp {
+        width: 200px;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 2em;
+    }
+    .message input {
+        width: 200px;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 2em;
+        font-size: 15px;
+    }
+    .major,
+    .direction {
+        margin-bottom: 10px;
+        width: 200px;
+        height: 50px;
+        font-size: 15px;
+        border-radius: 2em;
+    }
+    .veri_inp {
+        width: 200px;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 2em;
+    }
+    .login {
+        width: 200px;
+        height: 62px;
+        font-size: 20px;
+        font-weight: 300;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 20px 20px;
+        border: none;
+        transition: all 0.3s;
+        background: #C9CCD3;
+        border-radius: 2em;
+        border: 3px solid #C9CCD3;
+        margin-top: 30px;
+    }
+    .login:hover {
+        color: #C9CCD3;
+        background: none;
+        border: 3px dotted #C9CCD3;
+    }
+    .vari-2 {
+        text-align: center;
+    }
+    .telephone button {
+        width: 200px;
+        height: 50px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        background-color: #C9CCD3;
+        color: rgb(0, 0, 0);
+        border-radius: 1em;
+        outline: none;
+        border: none;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 992px) {
+    .submitmessage {
+        width: 100%;
+        display: flex;
+    }
+    .all {
+        margin: 0 auto;
+    }
+    .tel_inp {
+        width: 250px;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 2em;
+    }
+    .message input {
+        width: 250px;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 2em;
+        font-size: 15px;
+    }
+    .major,
+    .direction {
+        margin-bottom: 10px;
+        width: 250px;
+        height: 50px;
+        font-size: 15px;
+        border-radius: 2em;
+    }
+    .veri_inp {
+        width: 250px;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 2em;
+    }
+    .login {
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
+        font-weight: 300;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 20px 20px;
+        border: none;
+        transition: all 0.3s;
+        background: #C9CCD3;
+        border-radius: 2em;
+        border: 3px solid #C9CCD3;
+        margin-top: 30px;
+        line-height: 0;
+    }
+    .login:hover {
+        color: rgb(0, 0, 0);
+        background: none;
+        border: 3px dotted #C9CCD3;
+    }
+    .vari-2 {
+        text-align: center;
+    }
+    .telephone button {
+        width: 100px;
+        height: 50px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        background-color: #C9CCD3;
+        color: rgb(0, 0, 0);
+        border: 0;
+        border-radius: 1em;
+        margin-top: 20px;
+        outline: none;
+        border: none;
+        display: inline-block;
+    }
+}
+
+@media(max-width:314px) {
+    .manner {
+        width: 100%;
+        text-align: center;
+        text-indent: 10px;
+        line-height: 1.2;
+        display: block;
+        font-family: Montserrat-ExtraBold;
+        font-size: 17px;
+        color: #fff;
+    }
+    .submitmessage {
+        width: 100%;
+        display: flex;
+    }
+    .all {
+        margin: 0 auto;
+    }
+    .message {
+        line-height: 1.2;
+        display: block;
+        font-size: 24px;
+        color: #fff;
+        font-family: Montserrat-ExtraBold;
+    }
+    /* 电话 */
+    .tel_inp {
+        width: 200px;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 2em;
+    }
+    input:focus,
+    textarea:focus {
+        outline: none;
+    }
+    input::-ms-clear {
+        display: none;
+    }
+    .veri_inp {
+        width: 200px;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 2em;
+    }
+    .vari-2 {
+        text-align: center;
+    }
+    .telephone button {
+        width: 100px;
+        height: 50px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        background-color: #E4E4E1;
+        background-image: radial-gradient(at top center, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.03) 100%), linear-gradient(to top, rgba(255, 255, 255, 0.1) 0%, rgba(143, 152, 157, 0.60) 100%);
+        background-blend-mode: normal, multiply;
+        color: rgb(0, 0, 0);
+        border: 0;
+        border-radius: 1em;
+        outline: none;
+        border: none;
+        display: inline-block;
+    }
+    .telephone button:hover {
+        width: 100px;
+        background-color: rgba(192, 189, 152, 0.815);
+        border: 3px dotted rgba(192, 189, 152, 0.815);
+    }
+    /* 输入框 */
+    .message input {
+        width: 200px;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 2em;
+        font-size: 15px;
+    }
+    .major,
+    .direction {
+        margin-bottom: 10px;
+        width: 200px;
+        height: 50px;
+        font-size: 15px;
+        border-radius: 2em;
+    }
+    select {
+        outline: none;
+        border: solid 1px #ccc;
+        appearance: none;
+        /*清除select下拉框默认样式*/
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        padding-right: 14px;
+        /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+        /* background: url("img/arrow.png") no-repeat scroll right center transparent; */
+        /*自定义图片覆盖原有的下三角符号*/
+    }
+    select::-ms-expand {
+        display: none;
+        /*清除IE默认下拉按钮，但是测试发现IE10以上有效，IE8，9默认下拉按钮仍旧存在*/
+    }
+    /* 提交按钮 */
+    .login {
+        width: 200px;
+        height: 72px;
+        font-size: 20px;
+        font-weight: 300;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 20px 20px;
+        border: none;
+        transition: all 0.3s;
+        background: #C9CCD3;
+        border-radius: 2em;
+        border: 3px solid #C9CCD3;
+        margin-top: 30px;
+    }
+    .login:hover {
+        color: rgb(0, 0, 0);
+        background: none;
+        border: 3px dotted #C9CCD3;
+    }
+}
