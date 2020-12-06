@@ -1,0 +1,243 @@
+h1 {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.back_img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 1080px;
+    max-width: 100%;
+    min-height: 480px;
+    opacity: 0.8;
+    font-family: sans-serif;
+}
+
+.form-container .form-block {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social-container {
+    margin: 20px 0;
+}
+
+
+/* .social-container a {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+} */
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    opacity: 1;
+    z-index: 2;
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.overlay {
+    background: transparent;
+    background: linear-gradient(to right, #ff4b2b, #ff416c) no repeat 0 0 /cover;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-right {
+    right: 100px;
+    transform: translateX(0);
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+}
+
+
+/*....Animation....*/
+
+
+/*....Move signin to the right....*/
+
+.container.right-panel-active .sign-in-container {
+    /* z-index: 5; */
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+
+/*....Move overlay to the left....*/
+
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+
+/*....Bring sign up over sign in....*/
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+
+/*...Move overlay back to right....*/
+
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
+
+
+/* 
+.login-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+} */
+
+.login-form {
+    width: 1000px;
+    height: 100px;
+}
+
+.textadmin {
+    margin-top: 0em;
+    margin-bottom: 2em;
+    margin-left: 2em;
+}
+
+.textstu {
+    margin-bottom: 2em;
+    /* margin-left: 2em; */
+}
+
+.input-user {
+    margin-top: -5vw;
+}
+
+.input-pass {
+    margin-top: 3vw;
+}
+
+.btn-login {
+    text-align: center;
+    margin-top: 4vw;
+    margin-left: 2em;
+}
+
+
+/*以下都是注册页面的代码*/
+
+.stu_reg {
+    background: url('../img/login.jpg');
+    background-size: 100% 100%;
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
+
+.reg_box {
+    width: 1000px;
+    margin: 0 auto;
+    /* padding-top: 3em; */
+    background-color: rgba(255, 255, 255, 0.87);
+    opacity: 0.9;
+}
+
+.form_reg {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 5em;
+}
+
+.inline_box {
+    display: flex;
+}
+
+.reg_btn {
+    display: table;
+    margin: 0 auto;
+}
+
+.img_code {
+    width: 12em;
+    height: 4em;
+    margin-left: 3em;
+    position: relative;
+    top: -4.5em;
+    left: 20em;
+}

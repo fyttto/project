@@ -1,0 +1,29 @@
+.wscn-http404-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wscn-http404 {
+    /* margin: auto; */
+}
+
+.bullshit__oops {
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.bullshit__headline {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.bullshit__info {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.bullshit__return-home {
+    margin-left: 1em;
+    font-size: 2em;
+}
